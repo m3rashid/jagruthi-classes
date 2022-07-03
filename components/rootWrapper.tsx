@@ -8,8 +8,8 @@ import React from 'react'
 import { RecoilRoot } from 'recoil'
 import { NotificationsProvider } from '@mantine/notifications'
 
-// import Footer from 'components/globals/footer'
-// import TopHeader from 'components/globals/header'
+import Footer from 'components/footer'
+import TopHeader from 'components/header'
 
 interface IProps {
   children: React.ReactNode
@@ -33,7 +33,7 @@ const RootWrapper: React.FC<IProps> = ({ children }) => {
   const theme: MantineThemeOverride = {
     colorScheme,
     primaryColor: 'cyan',
-    fontFamily: 'Quicksand, sans-serif',
+    fontFamily: 'Poppins, sans-serif',
   }
 
   return (
@@ -51,12 +51,12 @@ const RootWrapper: React.FC<IProps> = ({ children }) => {
           withNormalizeCSS
         >
           <NotificationsProvider limit={5} position="top-right">
-            {/* <TopHeader
+            <TopHeader
               colorScheme={colorScheme}
               toggleColorScheme={toggleColorScheme}
-            /> */}
+            />
             {children}
-            {/* <Footer /> */}
+            <Footer />
           </NotificationsProvider>
         </MantineProvider>
       </ColorSchemeProvider>

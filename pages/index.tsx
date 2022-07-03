@@ -1,12 +1,14 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import type { NextPage } from 'next'
+
+import PageWrapper from 'components/pageWrapper'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <PageWrapper>
       <h1>Hello</h1>
-    </div>
+    </PageWrapper>
   )
 }
 

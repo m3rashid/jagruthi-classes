@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <SessionProvider>
       <RootWrapper>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </RootWrapper>
     </SessionProvider>
   )
