@@ -5,9 +5,7 @@ import {
   createStyles,
   Group,
   Header,
-  Image,
-  Paper,
-  Transition,
+  Title,
 } from '@mantine/core'
 import React from 'react'
 import { useRouter } from 'next/router'
@@ -66,6 +64,7 @@ const TopHeader: React.FC<IProps> = ({ colorScheme, toggleColorScheme }) => {
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container size="lg" className={classes.header}>
+        <Title order={2}>Jagruthi Classes</Title>
         <ThemeChanger />
       </Container>
     </Header>

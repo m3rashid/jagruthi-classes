@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
+import { Button, Paper, TextInput } from '@mantine/core'
+
+import PageWrapper from 'components/pageWrapper'
 
 const Tutor: NextPage = () => {
   return (
-    <div>
+    <PageWrapper>
       <h1>Hello</h1>
-    </div>
+    </PageWrapper>
   )
 }
 
